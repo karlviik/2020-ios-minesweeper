@@ -7,23 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB2177C92447D55000E55226 /* MinesweeperGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2177C82447D55000E55226 /* MinesweeperGame.swift */; };
+		CB2177CB2447D73700E55226 /* MinesweeperGameTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2177CA2447D73700E55226 /* MinesweeperGameTile.swift */; };
 		CB74BBBF244604F4008AD7C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB74BBBE244604F4008AD7C2 /* AppDelegate.swift */; };
 		CB74BBC1244604F4008AD7C2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB74BBC0244604F4008AD7C2 /* SceneDelegate.swift */; };
-		CB74BBC3244604F4008AD7C2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB74BBC2244604F4008AD7C2 /* ViewController.swift */; };
+		CB74BBC3244604F4008AD7C2 /* MinesweeperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB74BBC2244604F4008AD7C2 /* MinesweeperViewController.swift */; };
 		CB74BBC6244604F4008AD7C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB74BBC4244604F4008AD7C2 /* Main.storyboard */; };
 		CB74BBC8244604FD008AD7C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB74BBC7244604FD008AD7C2 /* Assets.xcassets */; };
 		CB74BBCB244604FD008AD7C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB74BBC9244604FD008AD7C2 /* LaunchScreen.storyboard */; };
+		CB74BBD324460624008AD7C2 /* UITileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB74BBD224460624008AD7C2 /* UITileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CB2177C82447D55000E55226 /* MinesweeperGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinesweeperGame.swift; sourceTree = "<group>"; };
+		CB2177CA2447D73700E55226 /* MinesweeperGameTile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinesweeperGameTile.swift; sourceTree = "<group>"; };
 		CB74BBBB244604F4008AD7C2 /* iti0213-2019s-hw3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iti0213-2019s-hw3.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB74BBBE244604F4008AD7C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB74BBC0244604F4008AD7C2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CB74BBC2244604F4008AD7C2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CB74BBC2244604F4008AD7C2 /* MinesweeperViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinesweeperViewController.swift; sourceTree = "<group>"; };
 		CB74BBC5244604F4008AD7C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CB74BBC7244604FD008AD7C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CB74BBCA244604FD008AD7C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CB74BBCC244604FD008AD7C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB74BBD224460624008AD7C2 /* UITileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +64,14 @@
 			children = (
 				CB74BBBE244604F4008AD7C2 /* AppDelegate.swift */,
 				CB74BBC0244604F4008AD7C2 /* SceneDelegate.swift */,
-				CB74BBC2244604F4008AD7C2 /* ViewController.swift */,
+				CB74BBC2244604F4008AD7C2 /* MinesweeperViewController.swift */,
 				CB74BBC4244604F4008AD7C2 /* Main.storyboard */,
+				CB74BBD224460624008AD7C2 /* UITileView.swift */,
 				CB74BBC7244604FD008AD7C2 /* Assets.xcassets */,
 				CB74BBC9244604FD008AD7C2 /* LaunchScreen.storyboard */,
 				CB74BBCC244604FD008AD7C2 /* Info.plist */,
+				CB2177C82447D55000E55226 /* MinesweeperGame.swift */,
+				CB2177CA2447D73700E55226 /* MinesweeperGameTile.swift */,
 			);
 			path = "iti0213-2019s-hw3";
 			sourceTree = "<group>";
@@ -138,9 +147,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB74BBC3244604F4008AD7C2 /* ViewController.swift in Sources */,
+				CB74BBC3244604F4008AD7C2 /* MinesweeperViewController.swift in Sources */,
 				CB74BBBF244604F4008AD7C2 /* AppDelegate.swift in Sources */,
+				CB74BBD324460624008AD7C2 /* UITileView.swift in Sources */,
 				CB74BBC1244604F4008AD7C2 /* SceneDelegate.swift in Sources */,
+				CB2177CB2447D73700E55226 /* MinesweeperGameTile.swift in Sources */,
+				CB2177C92447D55000E55226 /* MinesweeperGame.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +297,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "iti0213-2019s-hw3/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -302,6 +315,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "iti0213-2019s-hw3/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
