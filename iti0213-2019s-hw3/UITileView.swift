@@ -47,6 +47,7 @@ class UITileView: UIView {
     var flagIcon : String = "🚩"  {didSet {setNeedsDisplay()}}
     var bombIcon : String = "💣"  {didSet {setNeedsDisplay()}}
     var explosionIcon : String = "💥"  {didSet {setNeedsDisplay()}}
+    var fontSize : Int = 18 {didSet {setNeedsDisplay()}}
     
     // pos
     @IBInspectable
@@ -132,7 +133,7 @@ class UITileView: UIView {
     }
     
     private func drawText(text: String, rect: CGRect) -> Void {
-        let convertedText = NSAttributedString(string: text)
+        let convertedText = NSAttributedString(string: text, attributes: [NSAttributedString.Key.font: UIFont(name: "Arial", size: CGFloat(self.fontSize))!])
         let textBounds = convertedText.size()
         let adjustedPoint = CGPoint(x: viewMidPoint.x - textBounds.width / 2, y: viewMidPoint.y - textBounds.height / 2)
         convertedText.draw(at: adjustedPoint)

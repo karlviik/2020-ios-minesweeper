@@ -16,6 +16,9 @@
 		CB74BBC8244604FD008AD7C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB74BBC7244604FD008AD7C2 /* Assets.xcassets */; };
 		CB74BBCB244604FD008AD7C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB74BBC9244604FD008AD7C2 /* LaunchScreen.storyboard */; };
 		CB74BBD324460624008AD7C2 /* UITileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB74BBD224460624008AD7C2 /* UITileView.swift */; };
+		CBC33DE7245B1ED1006C3E10 /* MasterUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC33DE6245B1ED0006C3E10 /* MasterUIViewController.swift */; };
+		CBC33DE9245B4BF8006C3E10 /* MinesweeperUISplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC33DE8245B4BF8006C3E10 /* MinesweeperUISplitViewController.swift */; };
+		CBC33DEB245B4EE2006C3E10 /* CustomGameUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC33DEA245B4EE2006C3E10 /* CustomGameUIViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,9 @@
 		CB74BBCA244604FD008AD7C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CB74BBCC244604FD008AD7C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB74BBD224460624008AD7C2 /* UITileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITileView.swift; sourceTree = "<group>"; };
+		CBC33DE6245B1ED0006C3E10 /* MasterUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterUIViewController.swift; sourceTree = "<group>"; };
+		CBC33DE8245B4BF8006C3E10 /* MinesweeperUISplitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinesweeperUISplitViewController.swift; sourceTree = "<group>"; };
+		CBC33DEA245B4EE2006C3E10 /* CustomGameUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomGameUIViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +78,9 @@
 				CB74BBCC244604FD008AD7C2 /* Info.plist */,
 				CB2177C82447D55000E55226 /* MinesweeperGame.swift */,
 				CB2177CA2447D73700E55226 /* MinesweeperGameTile.swift */,
+				CBC33DE6245B1ED0006C3E10 /* MasterUIViewController.swift */,
+				CBC33DE8245B4BF8006C3E10 /* MinesweeperUISplitViewController.swift */,
+				CBC33DEA245B4EE2006C3E10 /* CustomGameUIViewController.swift */,
 			);
 			path = "iti0213-2019s-hw3";
 			sourceTree = "<group>";
@@ -147,11 +156,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBC33DE7245B1ED1006C3E10 /* MasterUIViewController.swift in Sources */,
 				CB74BBC3244604F4008AD7C2 /* MinesweeperViewController.swift in Sources */,
 				CB74BBBF244604F4008AD7C2 /* AppDelegate.swift in Sources */,
 				CB74BBD324460624008AD7C2 /* UITileView.swift in Sources */,
+				CBC33DEB245B4EE2006C3E10 /* CustomGameUIViewController.swift in Sources */,
 				CB74BBC1244604F4008AD7C2 /* SceneDelegate.swift in Sources */,
 				CB2177CB2447D73700E55226 /* MinesweeperGameTile.swift in Sources */,
+				CBC33DE9245B4BF8006C3E10 /* MinesweeperUISplitViewController.swift in Sources */,
 				CB2177C92447D55000E55226 /* MinesweeperGame.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
