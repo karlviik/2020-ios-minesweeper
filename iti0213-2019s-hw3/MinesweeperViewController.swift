@@ -35,28 +35,9 @@ class MinesweeperViewController: UIViewController {
     @IBOutlet weak var gameBombCounter: UILabel!
     @IBOutlet weak var gameTimeCounter: UILabel!
     
-    @IBAction func startNewGame(_ sender: UIButton) {
-        var bombPercent : Int
-        switch sender.tag {
-        case 1:
-            bombPercent = 10
-        case 2:
-            bombPercent = 20
-        case 3:
-            bombPercent = 30
-        default:
-            return
-        }
-        game = MinesweeperGame(x: x!, y: y!, bombPercent: bombPercent)
-        if let tim = timer {
-            tim.invalidate()
-        }
-        timerTime = 0
-        timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(self.doTimerUpdate), userInfo: nil, repeats: true)
-        cleanGameViews()
-
+    @IBAction func resetGame(_ sender: UIButton) {
+        startNewGame()
     }
-    
     func startNewGame() {
         let bombPercent = Int(50 * bombPercentage)
         game = MinesweeperGame(x: x!, y: y!, bombPercent: bombPercent)
@@ -91,7 +72,7 @@ class MinesweeperViewController: UIViewController {
     
     private func buildGameBoard() {
         let SIZE = Int(Float(BASE_SIZE) * (4.0 - 3 * gameBoardSize))
-        let fontSize = Int(18.0 * (4.0 - 3 * gameBoardSize))
+        let fontSize = Int(14.0 * (4.0 - 3 * gameBoardSize))
         var color : UIColor
         switch theme {
         case 0:
@@ -136,14 +117,6 @@ class MinesweeperViewController: UIViewController {
             }
         }
         print("finished building game board")
-        print(boardHeight)
-        print(boardWidth)
-
-        print(gameBoard.arrangedSubviews.count)
-        print(gameBoard.arrangedSubviews[0].bounds.height)
-        print(gameBoard.arrangedSubviews[0].bounds.width)
-        let test = gameBoard.arrangedSubviews[0] as! UIStackView
-        print(test.arrangedSubviews.count)
         
     }
     
