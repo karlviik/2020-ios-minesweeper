@@ -40,8 +40,8 @@ class MinesweeperGame {
         
         // array of safe locations in a flat array, only coordinates that are on the map
         var safeLocations = Array<Int>()
-        for cx in -1...1 {
-            for cy in -1...1 {
+        for cx in (-1)...1 {
+            for cy in (-1)...1 {
                 let nx = safeX + cx
                 let ny = safeY + cy
                 if 0 <= nx && nx < x && 0 <= ny && ny < y {
